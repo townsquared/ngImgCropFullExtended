@@ -1,7 +1,7 @@
 {
     "name": "ng-img-crop-full-extended",
     "prettyName": "ngImgCropFullExtended",
-    "version": "0.5.4",
+    "version": "0.5.5",
     "authors": [{
         "name": "Alex Kaul",
         "email": "alexkaul@googlemail.com"
@@ -44,6 +44,6 @@
         "test"
     ],
     "devDependencies": {
-        "angular": "1.4.0"
+        "angular": "1.3.15"
     }
 }
