@@ -164,10 +164,9 @@ crop.directive('imgCrop', ['$timeout', 'cropHost', 'cropPubSub', function ($time
 
 
             // Sync CropHost with Directive's options
-            scope.$watch('image', function (newVal) {
-                if (newVal) {
-                    displayLoading();
-                }
+            scope.$watch('image', function (newVal, oldVal) {
+                if (newVal === oldVal) return;
+                displayLoading();
                 $timeout(function () {
                     cropHost.setInitMax(scope.initMaxArea);
                     cropHost.setNewImageSource(scope.image);

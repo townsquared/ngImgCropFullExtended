@@ -18,7 +18,7 @@ On update 0.5.4 i have fixed resize of the circle, it's looks not perfect, but i
 
 If you want to contribute, please join our [gitter chat](https://gitter.im/CrackerakiUA/ngImgCropFullExtended) and [trello board](https://trello.com/b/ojPTSMax/ngimgcropfullextended) for better organisation. To join trello write reply [HERE.](https://github.com/CrackerakiUA/ngImgCropFullExtended/issues/78)
 
-# ngImgCropFullExtended
+# ngImgCropTownsquared
 
 Simple Image Crop directive for AngularJS. Enables to crop a circle, a square or a rectangle out of an image.
 
@@ -183,7 +183,8 @@ Assignable angular expression to data-bind to. NgImgCrop gets an image for cropp
 
 * Notice for mobile device:
 Using Data URI is very slow on mobile device, 6x slower. (http://www.mobify.com/blog/data-uris-are-slow-on-mobile/)
-Provide instead a blob.
+
+Expects a Data URI or a Blob (recommended: a Blob).
 
 ### result-image
 

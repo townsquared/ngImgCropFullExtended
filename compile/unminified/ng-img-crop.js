@@ -1,11 +1,11 @@
 /*!
- * ngImgCropExtended v0.5.4
- * https://github.com/CrackerakiUA/ngImgCropExtended/
+ * ngImgCropTownsquared v0.5.7
+ * https://github.com/townsquared/ngImgCropTownsquared/
  *
- * Copyright (c) 2016 undefined
+ * Copyright (c) 2017 undefined
  * License: MIT
  *
- * Generated at Thursday, March 17th, 2016, 5:33:03 PM
+ * Generated at Tuesday, February 7th, 2017, 6:01:16 PM
  */
 (function() {
 var crop = angular.module('ngImgCrop', []);
@@ -3013,10 +3013,9 @@ crop.directive('imgCrop', ['$timeout', 'cropHost', 'cropPubSub', function ($time
                 }));
 
             // Sync CropHost with Directive's options
-            scope.$watch('image', function (newVal) {
-                if (newVal) {
-                    displayLoading();
-                }
+            scope.$watch('image', function (newVal, oldVal) {
+                if (newVal === oldVal) return;
+                displayLoading();
                 $timeout(function () {
                     cropHost.setInitMax(scope.initMaxArea);
                     cropHost.setNewImageSource(scope.image);
