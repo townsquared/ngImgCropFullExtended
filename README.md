@@ -183,7 +183,8 @@ Assignable angular expression to data-bind to. NgImgCrop gets an image for cropp
 
 * Notice for mobile device:
 Using Data URI is very slow on mobile device, 6x slower. (http://www.mobify.com/blog/data-uris-are-slow-on-mobile/)
-Provide instead a blob.
+
+Expects a Data URI or a Blob (recommended: a Blob).
 
 ### result-image
 

@@ -22,7 +22,7 @@
     }],
     "name": "ng-img-crop-townsquared",
     "prettyName": "ngImgCropTownsquared",
-    "version": "0.5.6",
+    "version": "0.5.7",
     "description": "Image crop directive for AngularJS, square, circle and rectangle areas. Working aspect. Features like export array and more comming.",
     "license": "MIT",
     "homepage": "https://github.com/townsquared/ngImgCropTownsquared/",
